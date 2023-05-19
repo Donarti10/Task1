@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  .container {
+    padding: 0 5%;
+    display: flex;
+    margin-top: 5%;
+  }
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: max(10px, 2vw);
+    flex-wrap: wrap;
+  }
+  .cards {
+    border-radius: max(10px, 1.5vw);
+    padding: 20px 10px max(20px, 4vw) 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: max(15px, 1.2vw);
+    width: 26%;
+  }
+  .career-card {
+    border: 1px solid #787878;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max(100px, 5vw);
+    height: max(65px, 3vw);
+  }
+  .career-icon {
+    width: max(30px, 2vw);
+    height: max(30px, 2vw);
+    display: flex;
+    align-items: center;
+  }
+  .career-items {
+    display: flex;
+    flex-direction: column;
+    gap: max(10px, 0.5vw);
+  }
+}
+
+@media (max-width:800px) {
+  .card{
+   gap: 5%;
+  }
+}
+@media (max-width:800px) {
+  .card{
+    flex-wrap: wrap !important;
+    text-align: center;
+    gap: max(25px, 1.25vw) !important; 
+  }
+  @media (max-width:750px) {
+    .card{
+      flex-wrap: wrap;
+      padding: 10%;
+    }
+  }
+  @media (max-width:460px) {
+    .card{
+      flex-wrap: wrap;
+      gap: 4%;
+    }
+    .career-card{
+     display: flex;
+     align-items: center;
+    }
+  }
+}
+
+@media (max-width:840px) {
+  .career-items{
+    gap: max(10px,0.5vw);
+  }
+  .career-card{
+    display: flex;
+    align-items: center;
+  }
+}
+
+

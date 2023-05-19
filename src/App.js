@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './app.scss'
+import {dataDomain} from './data'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="card">
+        {dataDomain.map((card) => {
+            return(
+              <div className="cards" key={card.id} >
+                <div className="career-card">
+                   <div className="career-icon" style={{ content: `url(${card.icon})` }}></div>
+                 </div> 
+                 <div className="career-items">
+                   <h3>{card.title}</h3>
+  
+                <p>{card.text}</p>
+                </div>
+                </div>
+            )
+        })}
+        </div>
     </div>
   );
 }
