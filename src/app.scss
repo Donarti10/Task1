@@ -44,36 +44,6 @@
     gap: max(10px, 0.5vw);
   }
 }
-
-@media (max-width:800px) {
-  .card{
-   gap: 5%;
-  }
-}
-@media (max-width:800px) {
-  .card{
-    flex-wrap: wrap !important;
-    text-align: center;
-    gap: max(25px, 1.25vw) !important; 
-  }
-  @media (max-width:750px) {
-    .card{
-      flex-wrap: wrap;
-      padding: 10%;
-    }
-  }
-  @media (max-width:460px) {
-    .card{
-      flex-wrap: wrap;
-      gap: 4%;
-    }
-    .career-card{
-     display: flex;
-     align-items: center;
-    }
-  }
-}
-
 @media (max-width:840px) {
   .career-items{
     gap: max(10px,0.5vw);
@@ -83,5 +53,52 @@
     align-items: center;
   }
 }
+@media (max-width:800px) {
+  .card{
+   gap: 5%;
+  }
+  .card{
+    flex-wrap: wrap !important;
+    text-align: center;
+    gap: max(25px, 1.25vw) !important; 
+  }
+}
+  
+  @media (max-width:750px) {
+    .card{
+      flex-wrap: wrap;
+      padding: 10%;
+    }
+    .cards{
+      width: 35%;
+    }
+  }
+  @media (max-width:750px) {
+  }
+  .career-card{
+    display: flex;
+    align-items: center;
+    width: max(130px, 6vw) !important;
+    height: max(65px, 3vw);
+  }
+
+  @media (max-width:500px) {
+    .card{
+      flex-wrap: wrap;
+      gap: 4%;
+    }
+    .career-card{
+     display: flex;
+     align-items: center;
+    }
+    .cards{
+      flex-wrap: wrap;
+      width: 20%;
+    }
+  }
+
+
+
+
 
 
