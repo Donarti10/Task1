@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  .container-banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .card-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: max(70px, 3.5vw);
+    padding: 0 0 5% 0;
+  }
+  .cards-banner {
+    width: 26%;
+    border: 1px solid #ccccb3;
+    border-radius: max(15px, 2vw);
+    padding: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  .date-banner {
+    display: flex;
+    padding: 5%;
+  }
+  .line-banner {
+    display: flex;
+    align-items: center;
+    padding: 5% 0;
+
+    button {
+      margin: 0 5%;
+      padding: 6px 27px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+    }
+  }
+  .card1 {
+    background-color: #39ac39;
+  }
+  .card2 {
+    background-color: #0040ff;
+  }
+  .card3 {
+    background-color: #cc00ff;
+  }
+  .icon-banner {
+    width: 10%;
+    border-radius: 60%;
+    margin-right: 3%;
+  }
+  .paragraf-banner {
+    padding: 5% 5% 15% 5%;
+    line-height: 1.4;
+
+    p {
+      color: #ccccb3;
+    }
+  }
+  .button-banner {
+    display: flex;
+    align-items: center;
+    padding: 5% 0 5% 6%;
+  }
+  .btn-banner {
+    border-radius: 45px;
+    padding: 15px 45px;
+    border: 1px solid #0066ff;
+    color:  #0066ff;
+    background-color: #fff;
+  }
+}
+
+@media (max-width:1025px) {
+    .cards-banner{
+       width: 36%;
+       margin: 0 20px;
+    }
+}
+
+@media (max-width:870px) {
+    .cards-banner{
+       width: 36%;
+    }
+}
+
+@media (max-width:800px) {
+    .cards-banner{
+       width: 36%;
+    }
+}
+@media (max-width:750px) {
+    .cards-banner{
+       width: 46%;
+       margin-left: 30%;
+    }
+}
+@media (max-width:650px) {
+    .cards-banner{
+       width: 56%;
+       margin-left: 30%;
+    }
+}
+@media (max-width:500px) {
+    .cards-banner{
+       width: 68%;
+       margin-left: 15%;
+    }
+}
+@media (max-width:400px) {
+    .cards-banner{
+       width: 66%;
+       margin-left: 15%;
+    }
+}
+@media (max-width:350px) {
+    .cards-banner{
+       width: 96%;
+       margin-left: 5%;
+    }
+}
+
