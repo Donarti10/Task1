@@ -77,8 +77,11 @@
   }
 }
 
-@media (max-width:1025px) {
-    .cards-banner{
+@media (max-width:1030px) {
+  .card-banner{
+    justify-content: center;
+  }  
+  .cards-banner{
        width: 36%;
        margin: 0 20px;
     }
@@ -95,10 +98,10 @@
        width: 36%;
     }
 }
-@media (max-width:750px) {
-    .cards-banner{
+@media (max-width:750px) { 
+  .cards-banner{
        width: 46%;
-       margin-left: 30%;
+       margin-left: 10%;
     }
 }
 @media (max-width:650px) {
