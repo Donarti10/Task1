@@ -16,7 +16,7 @@ export const dataDomain  = [
         id:1,
         icon: icon1,
         title:'The TLD',
-        text: 'Does the domain extension math the languege of the domain name?',
+        text: 'Does the domain extension enough ?',
     },
     {
         id:2,

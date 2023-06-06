@@ -27,18 +27,22 @@
   .date-banner {
     display: flex;
     padding: 5%;
+    font-size: max(13px,1.4vw);
   }
   .line-banner {
     display: flex;
     align-items: center;
     padding: 5% 0;
+    font-size: max(13px,1.3vw);
 
     button {
+      width: max(70px,7.5vw);
+      height: max(20px,2.3vw);
       margin: 0 5%;
-      padding: 6px 27px;
       border: none;
       border-radius: 5px;
       color: white;
+      font-size: max(11px,1.1vw);
     }
   }
   .card1 {
@@ -51,7 +55,7 @@
     background-color: #cc00ff;
   }
   .icon-banner {
-    width: 10%;
+    width: max(25px,2.5vw);
     border-radius: 60%;
     margin-right: 3%;
   }
@@ -61,6 +65,7 @@
 
     p {
       color: #ccccb3;
+      font-size: max(13px,1.4vw);
     }
   }
   .button-banner {
@@ -69,12 +74,20 @@
     padding: 5% 0 5% 6%;
   }
   .btn-banner {
+    width: max(100px,10vw);
+    height: max(35px,3.5vw);
     border-radius: 45px;
-    padding: 15px 45px;
     border: 1px solid #0066ff;
     color:  #0066ff;
     background-color: #fff;
+    font-size: max(11px,1.1vw);
   }
+  .btn-banner:hover{
+    box-shadow: 5px 5px 0px #f5edef;
+    top: 3px;
+    left: -3px;
+  }
+ 
 }
 
 @media (max-width:1030px) {
@@ -100,32 +113,44 @@
 }
 @media (max-width:750px) { 
   .cards-banner{
-       width: 46%;
-       margin-left: 10%;
+       width: 38%;
+       margin-left: 10px;
+    }
+}
+@media (max-width:704px) { 
+  .cards-banner{
+       width: 37%;
+       margin-left: 10px;
     }
 }
 @media (max-width:650px) {
     .cards-banner{
-       width: 56%;
-       margin-left: 30%;
+       width: 35%;
+       margin-left: 20px;
     }
+}
+@media (max-width:641px) {
+  .cards-banner{
+     width: 65%;
+     margin-left: 20px;
+  }
 }
 @media (max-width:500px) {
     .cards-banner{
-       width: 68%;
-       margin-left: 15%;
+       width: 88%;
+       margin-left: 15px;
     }
 }
 @media (max-width:400px) {
     .cards-banner{
-       width: 66%;
-       margin-left: 15%;
+       width: 96%;
+       margin-left: 20px;
     }
 }
 @media (max-width:350px) {
     .cards-banner{
-       width: 96%;
-       margin-left: 5%;
+       width: 100%;
+       margin-left: 5px;
     }
 }
 
